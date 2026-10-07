@@ -240,7 +240,7 @@ The wrapper is portable POSIX bash + Docker. It should work on any host with a r
 - **Linux** with Docker Engine or Docker Desktop — bind mounts and `--user` UID/GID map directly here, the most native experience.
 - **Windows + WSL2** with Docker Desktop's WSL2 backend — run `claude-pod` from inside a WSL distribution's bash shell.
 
-**Native Windows** (`cmd.exe` / PowerShell) is not supported. The wrapper is a bash script and uses POSIX tools (`id`, etc.); use WSL2 instead.
+**Native Windows** (PowerShell) is supported through a separate port in [`powershell/`](powershell/README.md). `cmd.exe` is not supported, and the bash wrapper itself needs WSL2 on Windows.
 
 If a platform doesn't behave as expected, please open an issue.
 
